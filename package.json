@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write **/*.{js,jsx,ts,tsx,md,html}"
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,md,html,css,scss}"
   },
   "dependencies": {
     "next": "11.0.1",
