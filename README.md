@@ -32,3 +32,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 実行方法
+
+```
+# 準備
+yarn install
+
+# アプリ実行
+yarn dev
+
+# playwright実行
+node playwright/example.js
+
+# test(jest)実行
+yarn test
+
+# 操作の記録
+yarn playwright codegen http://localhost:3000
+```
