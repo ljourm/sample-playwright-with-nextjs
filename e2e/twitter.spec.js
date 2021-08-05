@@ -3,8 +3,10 @@ beforeAll(async () => {
 })
 
 it('twitterのログイン画面が表示されること', async () => {
-  await page.screenshot({ path: 'screenshots/twitter.png' })
+  await new Promise((resolve) => setTimeout(resolve, 1000))
 
-  const element = await page.$eval('h1', (el) => el.innerHTML)
-  expect(element).toContain('Log in to Twitter<')
+  const innerHtml = await page.$eval('h1', (el) => el.innerHTML)
+  expect(innerHtml).toContain('Log in to Twitter')
+
+  await page.screenshot({ path: 'screenshots/twitter.png' })
 })
